@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600;700;800;900&family=Source+Code+Pro:wght@400;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-true-black: #0A0A0A;
+  --color-dark-charcoal: #141414;
+  --color-primary-red: #E8391E;
+  --color-electric-blue: #1A3BFF;
+  --color-off-white: #E8D5CC;
+  --color-muted-gray: #999999;
+  
+  --font-spartan: 'League Spartan', sans-serif;
+  --font-source: 'Source Code Pro', monospace;
+}
+
+body {
+  background-color: var(--color-true-black);
+  color: #FFFFFF;
+  font-family: var(--font-source);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-spartan);
+  text-transform: uppercase;
+}
+
+.font-spartan {
+  font-family: var(--font-spartan);
+}
+
+.font-source {
+  font-family: var(--font-source);
+}
+
+@keyframes scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-scroll-left {
+  animation: scroll-left 30s linear infinite;
+}
+
+.animate-scroll-left:hover {
+  animation-play-state: paused;
+}
